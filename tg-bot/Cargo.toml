@@ -1,0 +1,24 @@
+[package]
+name = "tg-bot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.18", features = ["full"] }  # Asynchronous runtime
+teloxide = "0.9"  # Telegram bot library without `auto_send` feature
+dotenv = "0.15"  # Load environment variables from a .env file
+pretty_env_logger = "0.4"  # Pretty logging
+log = "0.4"  # Standard logging facade
+solana-client = "1.17.3"   # Use the latest compatible version if needed
+solana-sdk = "1.18.6"
+reqwest = "0.11"
+base64 = "0.13"
+solana-account-decoder = "1.18.6" # Explicitly include this
+lazy_static = "1.4"
+dptree = "0.2"  # Add this line
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+solana-transaction-status = "1.0"
+bincode = "1.3"
